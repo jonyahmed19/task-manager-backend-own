@@ -12,7 +12,13 @@ const taskSchema = new Schema({
     status: {
         type: String,
         default: 'New',
-        required: true
+        required: true,
+        enum: [
+            "New",
+            "Processing",
+            "Completed",
+            "Cancelled"
+        ]
     },
     email: {
         type: String,
@@ -22,6 +28,8 @@ const taskSchema = new Schema({
         type: Date,
         default: Date.now
     }
+},{
+    versionKey: false
 });
 
 const Task = mongoose.model('Task', taskSchema);

@@ -16,10 +16,10 @@
     "hpp": "^0.2.3",
     "jsonwebtoken": "^9.0.0",
     "mongoose": "^6.8.1",
+    "nodemailer": "^6.9.1",
     "xss-clean": "^0.1.1"
   },
   "devDependencies": {
-    "morgan": "^1.10.0",
     "nodemon": "^2.0.20"
   }
 }
